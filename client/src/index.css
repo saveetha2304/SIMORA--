@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 🌙 Midnight Cyan */
+body.dark-theme {
+  background: #0b1120;
+  color: #e2f6ff;
+}
+
+body.dark-theme nav {
+  background: #101827;
+  border-bottom: 1px solid #1e2a3f;
+}
+
+body.dark-theme nav a,
+body.dark-theme nav button {
+  color: #7ee8fa;
+}
+
+body.dark-theme button {
+  background: #14b8c4;
+  color: #04141a;
+}
+
+body.dark-theme button:hover {
+  background: #22d3e0;
+}
+
+body.dark-theme footer {
+  background: #0b1120;
+  color: #4a5b73;
+  border-top: 1px solid #1e2a3f;
+}
+
+/* ☀️ Daylight Aurora */
+body.light-theme {
+  background: #f5f7ff;
+  color: #111827;
+}
+
+body.light-theme nav {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e9f5;
+}
+
+body.light-theme nav a,
+body.light-theme nav button {
+  color: #4f46e5;
+}
+
+body.light-theme button {
+  background: #6366f1;
+  color: #ffffff;
+}
+
+body.light-theme button:hover {
+  background: #818cf8;
+}
+
+body.light-theme footer {
+  background: #ffffff;
+  color: #6b7280;
+  border-top: 1px solid #e5e9f5;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+nav {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  margin: 0 8px;
+  font-weight: 500;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+main {
+  min-height: 70vh;
+  padding: 40px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+}
