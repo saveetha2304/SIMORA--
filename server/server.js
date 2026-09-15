@@ -5,6 +5,7 @@ const cors = require("cors");
 
 const productRoutes = require("./routes/productRoutes");
 const userRoutes = require("./routes/userRoutes");
+const searchRoutes = require("./routes/search.routes");
 
 const app = express();
 
@@ -23,6 +24,9 @@ app.use("/api/products", productRoutes);
 
 // User Auth API
 app.use("/api/auth", userRoutes);
+
+// Search API
+app.use("/api/search", searchRoutes);
 
 const PORT = 5000;
 

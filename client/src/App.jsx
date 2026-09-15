@@ -11,6 +11,7 @@ import Cart from "./pages/Cart";
 import Orders from "./pages/Orders";
 import Wishlist from "./pages/Whishlist";
 
+
 function App() {
   const contentRef = useRef(null);
 
@@ -54,6 +55,7 @@ function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/orders" element={<Orders />} />
             <Route path="/wishlist" element={<Wishlist />} />
+
           </Routes>
         </main>
         <Footer />

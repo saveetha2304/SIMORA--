@@ -17,6 +17,23 @@ export const getProducts = async () => {
   }
 };
 
+export const searchProducts = async (query) => {
+  try {
+    const response = await fetch(`${API_URL}/search?q=${encodeURIComponent(query)}`);
+
+    if (!response.ok) {
+      throw new Error("Failed to search products");
+    }
+
+    const data = await response.json();
+
+    return data.products || [];
+  } catch (error) {
+    console.error("Search API Error:", error);
+    return [];
+  }
+};
+
 export const signupUser = async (email, password, name) => {
   try {
     const response = await fetch(`${API_URL}/auth/signup`, {
